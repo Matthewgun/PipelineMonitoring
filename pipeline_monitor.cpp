@@ -1,5 +1,5 @@
 #include "pipeline_monitor.h"
-#include "pipeline_widget.h" // Добавляем include для кастомного виджета
+#include "pipeline_widget.h" 
 
 #include <QTcpSocket>
 #include <QMessageBox>
@@ -18,7 +18,7 @@ PipelineMonitor::PipelineMonitor(QWidget *parent)
     : QMainWindow(parent)
     , tcpSocket(nullptr)
     , pollTimer(new QTimer(this))
-    , pipelineWidget(nullptr) // Инициализируем указатель
+    , pipelineWidget(nullptr) 
 {
     setWindowTitle("Мониторинг трубопровода");
     resize(1000, 700);
@@ -33,7 +33,7 @@ PipelineMonitor::PipelineMonitor(QWidget *parent)
 PipelineMonitor::~PipelineMonitor()
 {
     disconnectFromModbus();
-    delete pipelineWidget; // Не забываем освободить память
+    delete pipelineWidget; 
 }
 void PipelineMonitor::setupUI()
 {
@@ -273,3 +273,4 @@ QColor PipelineMonitor::getColorFromStatus(const QString &status)
     if (status == "Авария") return Qt::red;
     return Qt::gray;
 }
+
