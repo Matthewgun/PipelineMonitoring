@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QPainter>
 #include <QVector>
-#include <QPainterPath> // Добавляем этот include
+#include <QPainterPath> 
 #include <QRectF>
 #include <QColor>
 
@@ -36,3 +36,4 @@ private:
 };
 
 #endif // PIPELINE_WIDGET_H
+
