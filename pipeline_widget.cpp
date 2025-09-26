@@ -1,6 +1,6 @@
 #include "pipeline_widget.h"
 #include <QPainter>
-#include <QPainterPath> // Добавляем этот include
+#include <QPainterPath> 
 
 PipelineWidget::PipelineWidget(QWidget *parent) : QWidget(parent)
 {
@@ -87,3 +87,4 @@ void PipelineWidget::calculateSegments()
                                   60);
     }
 }
+
