@@ -5,7 +5,7 @@
 #include <QTcpSocket>
 #include <QTimer>
 #include <QVector>
-#include <QProgressBar> // Добавляем include
+#include <QProgressBar> 
 #include <QLabel>
 
 // Предварительное объявление класса
@@ -53,3 +53,4 @@ private:
 };
 
 #endif // PIPELINE_MONITOR_H
+
